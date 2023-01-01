@@ -1,3 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;900&display=swap');
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
   background: #f3f3f3;
+}
+
+section.podcast {
+  position: relative;
+  width: 1175px;
+}
+
+section.podcast .podcast__cover {
+  position: absolute;
+  top: -25px;
+  left: -35px;
+}
+
+section.podcast .podcast__cover img {
+  width: 584px;
+  height: auto;
+  background: #000;
+  box-shadow: 0px 4px 24px #453f3f;
+}
+
+section.podcast .podcast__episodes {
+  box-sizing: border-box;
+  padding: 60px 80px 50px 604px;
+  min-height: 538px;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 4px 20px #e8eaef;
+}
+
+section.podcast .podcast__episodes .episodes__heading {
+  margin: 0 0 40px;
+  color: #a7a7a7;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+section.podcast .podcast__episodes ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+section.podcast .podcast__episodes ul li {
+  color: #4e4e4e;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+section.podcast .podcast__episodes ul input[type='checkbox'] {
+  margin-right: 20px;
+  width: 41px;
+  height: 41px;
 }
