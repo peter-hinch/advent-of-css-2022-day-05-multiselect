@@ -6,6 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advent of CSS 2022 - Day 05 - Multi-select</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="podcast">
+        <div class="podcast__cover">
+          <img src="./images/podcast-cover.png" />
+        </div>
+        <div class="podcast_episodes">
+          <h2>Listen to all the compressed.fm episodes</h2>
+          <ul>
+            <li>
+              <input type="checkbox" id="episode01" />
+              <label for="episode01">1 || Trailer</label>
+            </li>
+            <li>
+              <input type="checkbox" id="episode02" />
+              <label for="episode02">2 || James Q Quick's Origin Story</label>
+            </li>
+            <li>
+              <input type="checkbox" id="episode03" />
+              <label for="episode03">3 || Amy Dutton's Origin Story</label>
+            </li>
+            <li>
+              <input type="checkbox" id="episode04" />
+              <label for="episode04">4 || Tech Behind the Podcast</label>
+            </li>
+            <li>
+              <input type="checkbox" id="episode05" />
+              <label for="episode05">5 || Tech Behind SelfTeach.me</label>
+            </li>
+            <li>
+              <input type="checkbox" id="episode06" />
+              <label for="episode06">6 || Freelancing (Part 1)</label>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
