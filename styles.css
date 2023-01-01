@@ -56,17 +56,35 @@ section.podcast .podcast__episodes ul {
 }
 
 section.podcast .podcast__episodes ul li {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
   color: #4e4e4e;
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
 }
 
-section.podcast .podcast__episodes ul input[type='checkbox'] {
+section.podcast .podcast__episodes label {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.podcast__episodes input[type='checkbox'] {
+  display: none;
+}
+
+.podcast__episodes label::before {
+  position: relative;
   margin-right: 20px;
   width: 41px;
   height: 41px;
+  content: '';
+  display: inline-block;
+}
+
+.podcast__episodes input[type='checkbox'] + label::before {
+  content: url('./images/checkbox--unchecked.svg');
+}
+
+.podcast__episodes input[type='checkbox']:checked + label::before {
+  content: url('./images/checkbox--checked.svg');
 }
